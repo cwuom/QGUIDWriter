@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:id="@+id/main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QQ GUID 工具箱"
+        android:textColor="#03A9F4"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="需要Root权限"
+        android:textColor="#777777"
+        android:textSize="14sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="输入要写入的 GUID:"
+        android:textColor="#CCCCCC"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/guidEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="在此处输入或粘贴GUID..."
+        android:padding="12dp"
+        android:textColor="#4CAF50"
+        android:textColorHint="#555555"
+        android:singleLine="true"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/forgeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#03A9F4"
+        android:text="开始伪造"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="14dp"/>
+
+    <Button
+        android:id="@+id/btn_getter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#343434"
+        android:text="读取 GUID"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="14dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="执行日志:"
+        android:textColor="#CCCCCC"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"/>
+
+    <ScrollView
+        android:id="@+id/logScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#212121"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/logTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#9E9E9E"
+            android:textSize="12sp"
+            android:typeface="monospace"
+            android:textIsSelectable="true"/>
+    </ScrollView>
+
+</LinearLayout>
